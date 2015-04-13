@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.javaadvent.bootrest.todo.TodoController;
-import com.javaadvent.bootrest.todo.TodoNotFoundException;
 import com.textplus.proj.domain.Member;
 import com.textplus.proj.service.MemberService;
 
@@ -43,7 +41,7 @@ public class MemberController {
 	
 	@ExceptionHandler
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public void handleTodoNotFound(TodoNotFoundException ex) {
+    public void handleTodoNotFound(MemberNotFoundException ex) {
         LOGGER.error("Handling error with message: {}", ex.getMessage());
     }
 	

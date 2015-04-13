@@ -11,6 +11,13 @@ CREATE TABLE member (member_id int(20) NOT NULL AUTO_INCREMENT,
 		     phone VARCHAR(255),primary key(member_id));
 
 
+Running Locally
+
+Clone repo git clone https://github.com/debamit/textPlus.git.
+
+If maven installed : mvn clean spring-boot:run 
+Else: Run main method as Java Application under MgoProjectApplication
+
 Rest end points
 
 //Create member
