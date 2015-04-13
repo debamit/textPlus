@@ -12,7 +12,7 @@ public class MemberAssert extends AbstractAssert<MemberAssert, Member>{
 		super(actual, MemberAssert.class);
 	}
 
-	 static MemberAssert assertThatTodo(Member actual) {
+	 static MemberAssert assertThatMember(Member actual) {
 	        return new MemberAssert(actual);
 	    }
 

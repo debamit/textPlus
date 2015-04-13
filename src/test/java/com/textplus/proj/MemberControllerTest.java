@@ -80,12 +80,6 @@ public class MemberControllerTest {
 	        ArgumentCaptor<Member> createdArgument = ArgumentCaptor.forClass(Member.class);
 	        verify(meberServiceMock, times(1)).save(createdArgument.capture());
 	        verifyNoMoreInteractions(meberServiceMock);
-
-	        Member created = createdArgument.getValue();
-//	        assertThatMember(created)
-//	                .ha
-//	                .hasTitle(TITLE)
-//	                .hasNoDescription();
 	    }
 
 
